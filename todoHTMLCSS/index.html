@@ -8,10 +8,61 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body class="bg-secondary-subtle">
-    <nav class="content-fluid text-bg-dark">
-        <h3>TODOHTML&CSS</h3>
+    <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand p-0" href="index.html">
+            <img src="./img/logo_web.png" alt="LOGO HTML&CSS"> <span class="align-middle">TODOHTML&CSS</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Comenzando</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  HTML
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Esencial</a></li>
+                  <li><a class="dropdown-item" href="#">Etiquetas principales</a></li>
+                  <li><a class="dropdown-item" href="#">HTML semántico</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Formularios</a></li>
+                  <li><a class="dropdown-item" href="#">Multimedia</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  CSS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Esencial</a></li>
+                  <li><a class="dropdown-item" href="#">Colores y fondos</a></li>
+                  <li><a class="dropdown-item" href="#">Box model</a></li>
+                  <li><a class="dropdown-item" href="#">Tipografía</a></li>
+                  <li><a class="dropdown-item" href="#">Grid</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Pseudoelementos y clases</a></li>
+                  <li><a class="dropdown-item" href="#">Flex</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Modelo de cajas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Semántico</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Diseño</a>
+              </li>
+            </ul>
+          </div>
+        </div>
     </nav>
-    <main class="container" >
+    <main class="container mt-3" >
         <div class="row">
             <!--COLUMNA CURSO-->
             <div class="col">
@@ -111,6 +162,11 @@
             <!--COLUMNA DOCUMENTACION-->
         </div>
     </main>
+    <footer class="navbar fixed-bottom bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand " href="https://mastermind.ac/home"><small class="p-0 muyPequenyo text-body-secondary">© Copyright Mastermind 2023</small></a>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>    
 </body>
 </html>
