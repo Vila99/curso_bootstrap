@@ -1,4 +1,4 @@
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+// VALIDACION DE LOS DATOS PARA EL FORMULARIO
 (() => {
     'use strict'
   
