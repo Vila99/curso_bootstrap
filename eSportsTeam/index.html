@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>eSports Team</title>
+</head>
+<body class="">
+    <main class="container-cover">
+    <!-- MENU DE NAVEGACION -->
+    <nav class="fixed-top row py-2 navbar navbar-expand-lg" id="navbar">
+      <div class="col-5 menu d-flex justify-content-start px-4">
+        <a class="menu align-self-center ps-4" href="index.html" style="text-decoration: none; color: #fff;">MDK</a>
+      </div>
+      <div class="col-2 d-flex align-self-center justify-content-center">
+        <img src="./img/logo.png" alt="logo" class="logo mx-2">
+      </div>
+      <div class="col-5 d-flex justify-content-end align-self-center">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link nav-underline active" href="#roster" style="text-decoration: none; color: #fff;">EQUIPO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-underline mx-4" href="#secciones" style="text-decoration: none; color: #fff;">SECCIONES</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-sm btn-light fw-bold me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              #RANK
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+      <!-- CARRUSEL -->
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <!-- PRIMERA FOTO CARUSEL -->
+              <div class="carousel-item active">
+                <img src="./img/carusel1.jpg" alt="carusel1">
+                <div class="container">
+                  <div class="carousel-caption text-start">
+                    <h1>MDKWIN</h1>
+                    <p><a class="btn btn-lg btn-primary" href="#">#MDKWIN</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carusel2.jpg" alt="carusel2">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>Luce nuestros colores con orgullo.</h1>
+                    <p>Compra ya nuestras camisetas para la temporada 24-25.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Comprar</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carusel3.jpg" alt="carusel3">
+                <div class="container">
+                  <div class="carousel-caption text-end">
+                    <h1>Un vistazo a los recuerdos.</h1>
+                    <p>Revive nuestros momentos más destacados.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Galería</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <!-- FIN DEL CARRUSEL -->
+        <!-- INICIO DE ROSTER -->
+        <h2 class="d-flex justify-content-center fw-bold mb-5"  id="roster">ROSTER</h2>
+        <div class="d-flex row d-flex justify-content-around">
+          <!-- First card -->
+          <div class="card mb-3" style="width: 18rem;">
+            <img src="./img/MYRWN.webp" class="card-img-top" alt="MYRWN">
+            <div class="card-body">
+              <h5 class="card-title">MYRWN</h5>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMYRWN">
+                Saber más
+              </button>
+              <button type="button" class="btn btn-md btn-danger" data-bs-toggle="popover" data-bs-title="Nuevo TOP" data-bs-content="Os presentamos nuestra última incorporación para la Topline" data-bs-custom-class="custom-popover">New</button>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="width: 18rem;">
+            <img src="./img/ELYOYA.webp" class="card-img-top" alt="YOYA">
+            <div class="card-body">
+              <h5 class="card-title">ELYOYA</h5>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalYOYA">
+                Saber más
+              </button>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="width: 18rem;">
+            <img src="./img/FRESH.webp" class="card-img-top" alt="YOYA">
+            <div class="card-body">
+              <h5 class="card-title">FRESSKOWY</h5>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFRESH">
+                Saber más
+              </button>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="width: 18rem;">
+            <img src="./img/SUPA.webp" class="card-img-top" alt="SUPA">
+            <div class="card-body">
+              <h5 class="card-title">SUPA</h5>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSUPA">
+                Saber más
+              </button>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="width: 18rem;">
+            <img src="./img/MDK_Alvaro_2024_Split_1.webp" class="card-img-top" alt="ALVARO">
+            <div class="card-body">
+              <h5 class="card-title">ALVARO</h5>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalALVARO">
+                Saber más
+              </button>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="width: 18rem;">
+            <img src="./img/MELZHET.webp" class="card-img-top" alt="MELZHET">
+            <div class="card-body">
+              <h5 class="card-title">MELZHET</h5>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMELZHET">
+                Saber más
+              </button>
+            </div>
+          </div>
+          
+          <div class="card mb-3" style="width: 18rem;">
+            <img src="./img/ZEPH.webp" class="card-img-top" alt="ZEPH">
+            <div class="card-body">
+              <h5 class="card-title">ZEPH</h5>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalZEPH">
+                Saber más
+              </button>
+            </div>
+          </div>
+
+        </div>
+        <!-- FIN DEL ROSTER -->
+        <h2 class="d-flex justify-content-center fw-bold my-5">SECCIONES</h2>
+        <!-- INICIO DE SECCIONES -->
+        <div class="d-flex justify-content-around row" id="secciones">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/valoramt.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>VALORANT</h3>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="./img/superliga.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>SUPERLIGA</h3>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="./img/pokemon.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>POKEMON</h3>
+            </div>
+          </div>
+
+
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-light">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-light">About</a></li>
+      </ul>
+      <p class="text-center text-light">© 2024 MadLions, Inc - byVila</p>
+    </footer>
+    <!-- FIN DEL FOOTER -->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+  <!-- Modal ELYOYA-->
+  <div class="modal fade text-dark" id="modalMYRWN" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <img src="./img/MYRWN.webp" alt="">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">MYRWN</h5>
+        </div>
+        <div class="modal-body">
+          <!-- Contenido del modal Myrwin-->
+          <ul>
+            <li>Rol: TOP</li>
+            <li>Edad: 21</li>
+            <li>Sexo: Masculino</li>
+            <li>Nacionalidad: Español</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal MYRWIN-->
+  <div class="modal fade text-dark" id="modalYOYA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <img src="./img/ELYOYA.webp" alt="">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">MYRWN</h5>
+        </div>
+        <div class="modal-body">
+          <!-- Contenido del modal ELYOYA-->
+          <ul>
+            <li>Rol: JUNGLA</li>
+            <li>Edad: 21</li>
+            <li>Sexo: Masculino</li>
+            <li>Nacionalidad: Español</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal FRESHCOWY-->
+  <div class="modal fade text-dark" id="modalFRESH" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <img src="./img/FRESH.webp" alt="">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">MYRWN</h5>
+        </div>
+        <div class="modal-body">
+          <!-- Contenido del modal ELYOYA-->
+          <ul>
+            <li>Rol: MID</li>
+            <li>Edad: 21</li>
+            <li>Sexo: Masculino</li>
+            <li>Nacionalidad: Rumania</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal SUPA-->
+  <div class="modal fade text-dark" id="modalSUPA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <img src="./img/SUPA.webp" alt="">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">MYRWN</h5>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>Rol: ADC</li>
+            <li>Edad: 21</li>
+            <li>Sexo: Masculino</li>
+            <li>Nacionalidad: Español</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal ALVARO-->
+  <div class="modal fade text-dark" id="modalALVARO" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <img src="./img/MDK_Alvaro_2024_Split_1.webp" alt="">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">MYRWN</h5>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>Rol: SUPPORT</li>
+            <li>Edad: 21</li>
+            <li>Sexo: Masculino</li>
+            <li>Nacionalidad: Español</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal MELZHET-->
+  <div class="modal fade text-dark" id="modalMELZHET" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <img src="./img/MELZHET.webp" alt="">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">MELZHET</h5>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>Rol: Entrenador</li>
+            <li>Edad: 35</li>
+            <li>Sexo: Masculino</li>
+            <li>Nacionalidad: Español</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal ZEPH-->
+  <div class="modal fade text-dark" id="modalZEPH" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <img src="./img/ZEPH.webp" alt="">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">ZEPH</h5>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>Rol: Asistente</li>
+            <li>Edad: 32</li>
+            <li>Sexo: Masculino</li>
+            <li>Nacionalidad: Francés</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!--OFFCANVAS-->
+ <div class="offcanvas offcanvas-start text-light" style="background-color: #00296E;" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" style="color: #c6aa76;" id="offcanvasExampleLabel">CLASIFICACIÓN</h5>
+    <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="dropdown mt-3">
+      <div class="list-group list-group-item-dark">
+          <a href="https://lolesports.com/standings/lec/lec_season_finals_2024/regional_finals" class="list-group-item list-group-item-action fw-bold"> LEC</a>
+          <a href="https://lolesports.com/standings/superliga/superliga_summer_2024/playoffs" class="list-group-item list-group-item-action fw-bold"> SUPERLIGA</a>
+          <a href="https://valorantesports.com/standings" class="list-group-item list-group-item-action fw-bold"> VCT</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</html>
