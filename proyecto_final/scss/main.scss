@@ -4,16 +4,28 @@
 @import "../node_modules/bootstrap/scss/variables";
 
 
+
+// PALETA DE CLAROS
+
 $auto-bg: #f7f7f7;
-$texto: #1c1c1c;
 $rojo: #f00;
+
+// PALETA DE COLORES OSCUROS
+
+$texto: #1c1c1c;
+$sub: #696e84;
+$carmesi: #821f1f;
+
+
 
 // MASTER THEME
 
 $master-colors: (
-    "texto": $texto,
+    "textob": $texto,
     "fondo": $auto-bg,
     "rojo": $rojo,
+    "sub": $sub,
+    "carmesi": $carmesi,
 );
 
 $theme-colors:map-merge($master-colors, $theme-colors );
