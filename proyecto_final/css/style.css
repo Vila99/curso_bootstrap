@@ -1,0 +1,85 @@
+body{
+    width: 100%;
+    height: auto;
+    color: #ffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+footer{
+    margin: 0px 20px;
+}
+
+/* CLASES Y IDS */
+
+.carousel-inner{
+    height: 600px;
+    margin-top: 81.2px;
+}
+
+/* tabla */
+.centered-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+.centered-table th,
+.centered-table td {
+    text-align: center;
+}
+
+/* Scrollspy */
+
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: red;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-link.active {
+    color: red !important;
+}
+
+.nav-link.active::after {
+    transform: scaleX(1);
+}
+
+.logo{
+    max-width: 40px;
+}
+
+/* footer hover */
+
+.footer-nav .nav-item .nav-link {
+    transition: color 0.3s ease;
+}
+
+.footer-nav .nav-item .nav-link:hover {
+    color: red !important;
+}
+
+/* modal */
+
+.fotomodal{
+    max-width: 465px;
+}
+
+/* FEEDBACK */
+
+.invalid-feedback{
+    color: red;
+}

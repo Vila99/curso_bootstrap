@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="./img/icon.ico" type="image/x-icon">
+    <title>UNIQLO</title>
+</head>
+<body class="bg-fondo">
+    <div class="container-cover">
+        <!-- HEADER -->
+        <header id="navbar-example" class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between px-3 py-3 border-bottom fixed-top bg-fondo">
+            <div class="col-md-3 mb-2 mb-md-0">
+              <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <img src="./img/logo.svg" class="bi" width="95" height="42" role="img" aria-label="Bootstrap"></img>
+              </a>
+            </div>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#coleccion" class="nav-link px-2 link-secondary">NEW</a></li>
+              <li><a href="#disenos" class="nav-link px-2 link-secondary">DISEÑOS</a></li>
+              <li><a href="#espec" class="nav-link px-2 link-secondary">ESPECIFICACIONES</a></li>
+              <li><a href="#tiendas" class="nav-link px-2 link-secondary">TIENDAS</a></li>
+            </ul>
+      
+            <div class="col-md-3 text-end">
+              <button type="button" class="btn btn-outline-danger me-2">Login</button>
+              <button type="button" class="btn btn-danger" href="/form.html">Contacta</button>
+            </div>
+          </header>
+          <!-- FIN HEADER -->
+          <!-- CARRUSEL -->
+          <div id="carouselExampleCaptions" class="carousel slide" id="myCarousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/carousel2.avif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carousel1.avif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carousel1.1.avif" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- FIN DEL CAROUSEL -->
+          <!-- MAIN CONTENT ( CARTA PRODUCTO) -->
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example"-bs-offset="0" tabindex="0">
+            <h2 class="d-flex justify-content-center py-5 fw-bold" id="coleccion">NUEVA COLECCIÓN</h2>
+            <div class="card mb-3 mx-4">
+                <div class="row g-0">
+                <div class="col-md-6">
+                    <img src="./img/op.avif" class="img-fluid rounded-start" alt="one piece">
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                    <h3 class="card-title d-flex justify-content-center my-5">TV animation ONE PIECE 25th</h3>
+                    <p class="card-text d-flex justify-content-center px-5">Para celebrar el 25º aniversario del anime ONE PIECE emitido por televisión, sus personajes más populares ya están disponibles en forma de camisetas.
+
+                        Este 2024, el anime ONE PIECE celebra su 25º aniversario. Tras la larga historia de la emisión del anime, sus personajes siguen siendo especialmente queridos y ahora están disponibles en una colección muy especial de camisetas UT. Los tres hermanos Ace, Sabo y Luffy, así como Chopper, Uta y Gear 5 también están incluidos en esta selección.</p>
+                    <p class="card-text px-5"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                    <a class="btn btn-danger" style="margin-left: 70%;" href="form.html" role="button">SABER MÁS</a>
+                </div>
+                </div>
+            </div>
+            <!-- DISEÑOS DEL PRODUCTO -->
+            <h2 class="d-flex justify-content-center py-5 fw-bold" id="disenos">DISEÑOS</h2>
+            <div class="d-flex justify-content-center row row-cols-sm4 g-4">
+                <!-- CAMI 1 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/cami1.avif" class="card-img-top" alt="camiseta 1">
+                    <div class="card-body">
+                    <h5 class="card-title">ONE PIECE ANIME UT CAMISETA</h5>
+                    <a data-bs-toggle="modal" data-bs-target="#OP1" class="btn btn-primary">Info #OP1</a>
+                    </div>
+                </div>
+                <!-- CAMI2 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/cami2.webp" class="card-img-top" alt="camiseta 1">
+                    <div class="card-body">
+                    <h5 class="card-title">TV ANIME ONE PIECE 25TH UT CAMISETA</h5>
+                    <a data-bs-toggle="modal" data-bs-target="#OP2" class="btn btn-primary">Info #OP2</a>
+                    </div>
+                </div>
+                <!-- CAMI3 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/cami3.webp" class="card-img-top" alt="camiseta 1">
+                    <div class="card-body">
+                    <h5 class="card-title">TV ANIME ONE PIECE 25TH UT CAMISETA</h5>
+                    <a data-bs-toggle="modal" data-bs-target="#OP3" class="btn btn-primary">Info #OP3</a>
+                    </div>
+                </div>
+                <!-- CAMI4 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/cami4.webp" class="card-img-top" alt="camiseta 1">
+                    <div class="card-body">
+                    <h5 class="card-title">TV ANIME ONE PIECE 25TH UT CAMISETA</h5>
+                    <a data-bs-toggle="modal" data-bs-target="#OP4" class="btn btn-primary">Info #OP4</a>
+                    </div>
+                </div>
+                <!-- CAMI5 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/cami5.webp" class="card-img-top" alt="camiseta 1">
+                    <div class="card-body">
+                    <h5 class="card-title">TV ANIME ONE PIECE 25TH UT CAMISETA</h5>
+                    <a data-bs-toggle="modal" data-bs-target="#OP5" class="btn btn-primary">Info #OP5</a>
+                    </div>
+                </div>
+            </div>
+            <!-- ESPECIFICACIONES -->
+            <h2 class="d-flex justify-content-center py-5 fw-bold" id="espec">ESPECIFICACIONES</h2>
+            <div class="d-flex justify-content-center">
+                <table class="table table-striped centered-table" style="max-width: 70%;">
+                    <thead>
+                    <tr>
+                        <th scope="col">#OP</th>
+                        <th scope="col">Material</th>
+                        <th scope="col">Corte</th>
+                        <th scope="col">Color</th>
+                        <th scope="col">Diseño</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>100% Algodón</td>
+                        <td>Fit</td>
+                        <td>Blanco</td>
+                        <td>©Eiichiro Oda/Shueisha, Toei Animation</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>100% Algodón</td>
+                        <td>Fit</td>
+                        <td>Negro</td>
+                        <td>©Eiichiro Oda/Shueisha, Toei Animation</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>100% Algodón</td>
+                        <td>Oversize</td>
+                        <td>Beige</td>
+                        <td>©Eiichiro Oda/Shueisha, Toei Animation</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>100% Algodón</td>
+                        <td>Oversize</td>
+                        <td>Negro</td>
+                        <td>©Eiichiro Oda/Shueisha, Toei Animation</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>100% Algodón</td>
+                        <td>Fit</td>
+                        <td>Blanco</td>
+                        <td>©Eiichiro Oda/Shueisha, Toei Animation</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- TIENDAS -->
+            <h2 class="d-flex justify-content-center py-5 fw-bold" id="tiendas">TIENDAS</h2>
+            <div class="d-flex justify-content-center mb-5">
+                <ul class="list-group col-4">
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">BARCELONA</div>
+                        Av.Diagonal, 150
+                      </div>
+                      <span class="badge text-bg-primary rounded-pill">678-98-87-45</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">MADRID</div>
+                        Av.Castellana, 45
+                      </div>
+                      <span class="badge text-bg-primary rounded-pill">628-58-67-40</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">ZARAGOZA</div>
+                        C/Masson, 89
+                      </div>
+                      <span class="badge text-bg-primary rounded-pill">638-65-90-45</span>
+                    </li>
+                  </ul>
+                  <div class="col-1"></div>
+                  <ul class="list-group col-4">
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">MÁLAGA</div>
+                        Av.Gijón, 450
+                      </div>
+                      <span class="badge text-bg-primary rounded-pill">678-98-87-45</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">BILBAO</div>
+                        C/Castillo, 234
+                        <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="popover" title="Nueva apertura!" data-bs-content="Ven a visitarnos, 10% de descuento los primeros 1000 clientes.">
+                        New</button>
+                      </div>
+                      <span class="badge text-bg-primary rounded-pill">628-58-67-40</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">VIGO</div>
+                        C/París, 29
+                        <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="popover" title="Nueva apertura!" data-bs-content="Ven a visitarnos, 10% de descuento los primeros 1000 clientes.">
+                            New
+                          </button>
+                      </div>
+                      <span class="badge text-bg-primary rounded-pill">638-65-90-45</span>
+                    </li>
+                  </ul>
+            </div>
+          </div>
+        <!-- FOOTER DE LA PAGINA -->
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-2 border-top">
+            <p class="col-md-4 mb-0 text-body-secondary">© UNIQLO CO. LTD. - Curso Bootstrap - byVila</p>
+        
+            <img src="./img/icon.ico" alt="logo" class="logo">
+        
+            <ul class="nav col-md-4 justify-content-end footer-nav">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- SCRIPTS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+</body>
+<!-- MODALS -->
+ <div>
+    <!-- OP1 -->
+    <div class="modal fade" id="OP1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">ACE - MARINEFORD</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <img src="./img/cami1.1.webp" alt="cami modal" class="fotomodal">
+            <p>"¡¡Gracias por quererme!!"
+                Esta pieza de Marineford se centra en la pérdida de Luffy debido a la muerte de su querido hermano mayor Ace. Luffy acude a Marineford , donde la marina tiene su cuartel general, para salvar a su hermano Ace, que ha sido condenado a ejecución pública. Allí, Ace defiende a Luffy de un ataque del almirante Akainu y es atravesado en el estómago. Ace habla de su gratitud a sus amigos que le querían y muere en los brazos de Luffy. Esto refleja la frustración de Luffy por la pérdida de su querido hermano.</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- OP2 -->
+    <div class="modal fade" id="OP2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">ENIES LOBBY</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <img src="./img/cami2.2.webp" alt="cami modal" class="fotomodal">
+            <p>"Todas mis habilidades han evolucionado al siguiente nivel..."
+                Esta es una pieza que presenta la fuerza del Capitán Luffy en Enies Lobby. La tripulación de Sombrero de Paja lucha contra CP9, una agencia de inteligencia directamente bajo el control directo del Gobierno Mundial, en Enies Lobby, para recuperar a Robin. El diseño representa la escena de la nueva técnica de Luffy, Gear Two, que expresa su autoconciencia como capitán y sus sentimientos por sus amigos.</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- OP3 -->
+    <div class="modal fade" id="OP3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">EAST BLUE</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <img src="./img/cami3.3.webp" alt="cami modal" class="fotomodal">
+            <p>"¡¡Yo seré el rey de los piratas!!"
+                Esta prenda se basa en la determinación de iniciar un viaje desde el East Blue. Un día, Monkey D. Luffy, un niño que vive en Windmill Village en el East Blue, come una fruta del diablo y su cuerpo se vuelve como de goma. Prometiendo reunirse con Shanks, el hombre que le salvó la vida, Luffy emprende un viaje solo para convertirse en el rey de los piratas 10 años después. La frase decidida de Luffy "¡¡Yo seré el rey de los piratas!!" aparece en esta camiseta. La parte frontal de la camiseta presenta la bandera pirata de la tripulación de los Piratas Sombrero de Paja con el sombrero de paja que Shanks, el benefactor pirata le dio a Luffy.</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- OP4 -->
+    <div class="modal fade" id="OP4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Dressrosa</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <img src="./img/cami4.4.webp" alt="cami modal" class="fotomodal">
+            <p>"¡¡¡Una alianza significa que somos amigos!!!"
+                Esta camiseta de la Dressrosa se centra en la alianza entre la tripulación del Sombrero de Paja y los Piratas del Corazón. Luffy y Trafalgar Law forman una alianza pirata para derrotar a Doflamingo. Este diseño representa una escena en la que Luffy y Law trabajan juntos para enfrentarse al poderoso enemigo Doflamingo.</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- OP5 -->
+    <div class="modal fade" id="OP5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">KAIDO</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <img src="./img/cami5.5.webp" alt="cami modal" class="fotomodal">
+            <p>"¡¡¡Soy el hombre que te superará para ser el rey de los piratas!!!"
+                Esta es una pieza temática del Emperador, que representa a Luffy enfrentándose a Kaido de la Tierra de Wano. Kaido, Rey de las Bestias, es la criatura más fuerte de este mundo que gobierna la Tierra de Wano. En el frente está Onigashima, donde vive Kaido, y en la impresión del reverso está Luffy declarando: "¡¡¡Soy el hombre que te superará para ser el rey de los piratas!!!"</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+ </div>
+ <!-- FIN MODALS -->
+</html>
